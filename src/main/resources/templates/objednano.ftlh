@@ -15,7 +15,7 @@
         <h1>Děkujeme!</h1>
         <div>${form.jmeno} ${form.prijmeni} byl/a zařazen/a do tábora v termínu [#if turnus == "TURNUS_1"]5.-11.7.2026.
             [#elseif turnus == "TURNUS_2"] 12.-18.7.2026. [#elseif turnus == "TURNUS_2"]19.-25.7.2026.[/#if]
-            [#if form.email??]
+            [#if form.email?has_content]
                 Na e-mail ${form.email} byly zaslány informace o objednávce.
             [/#if]
             Těšíme se!
