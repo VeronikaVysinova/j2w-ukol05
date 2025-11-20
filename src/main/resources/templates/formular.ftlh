@@ -16,7 +16,7 @@
 
             <div class="mb-3">
                 <label for="jmeno" class="form-label">Jméno</label>
-                <input type="text" class="form-control" id="jmeno" name="jmeno" value="${form.jmeno}" required>
+                <input type="text" class="form-control" id="jmeno" name="jmeno" required>
             </div>
             [@spring.bind "form.jmeno"/]
             <div class="error">[@spring.showErrors "<br>"/]</div>
@@ -25,7 +25,7 @@
 
             <div class="mb-3">
                 <label for="prijmeni" class="form-label">Příjmení</label>
-                <input type="text" class="form-control" id="prijmeni" name="prijmeni" value="${form.prijmeni}" required>
+                <input type="text" class="form-control" id="prijmeni" name="prijmeni" required>
             </div>
             [@spring.bind "form.prijmeni"/]
             <div class="error">[@spring.showErrors "<br>"/]</div>
@@ -33,7 +33,7 @@
 
 
             <label for="datumNarozeni">Datum narození</label>
-            <input type="date" id="datumNarozeni" name="datumNarozeni" value="${form.datumNarozeni?string('yyyy-MM-dd')}" required>
+            <input type="date" id="datumNarozeni" name="datumNarozeni" required>
             [@spring.bind "form.datumNarozeni"/]
             <div class="error">[@spring.showErrors "<br>"/]</div>
 
@@ -72,13 +72,13 @@
 
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" value="${form.email}">
+                <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" >
             </div>
 
 
             <div class="mb-3">
                 <label for="telefon" class="form-label">Telefon</label>
-                <input type="tel" class="form-control" id="telefon" name="telefon" placeholder="+xx xxx xxx" value="${form.telefon}">
+                <input type="tel" class="form-control" id="telefon" name="telefon" placeholder="+xx xxx xxx" >
             </div>
 
 
