@@ -16,7 +16,7 @@
 
             <div class="mb-3">
                 <label for="jmeno" class="form-label">Jméno</label>
-                <input type="text" class="form-control" id="jmeno" name="jmeno" required>
+                [@spring.formInput path="form.jmeno" attributes='class="form-control" required'/]
             </div>
             [@spring.bind "form.jmeno"/]
             <div class="error">[@spring.showErrors "<br>"/]</div>
@@ -25,7 +25,7 @@
 
             <div class="mb-3">
                 <label for="prijmeni" class="form-label">Příjmení</label>
-                <input type="text" class="form-control" id="prijmeni" name="prijmeni" required>
+                [@spring.formInput path="form.prijmeni" attributes='class="form-control" required'/]
             </div>
             [@spring.bind "form.prijmeni"/]
             <div class="error">[@spring.showErrors "<br>"/]</div>

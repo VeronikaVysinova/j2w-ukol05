@@ -39,7 +39,7 @@ public class RegistraceController {
 
 
     if (form.getDatumNarozeni() == null || form.getVek() < 9 || form.getVek() > 15) {
-      return new ModelAndView("/nespravny-vek");
+        bindingResult.rejectValue("datumNarozeni","invalidAge","Věk dítěte musí být mezi 9 - 15 let včetně. Tato podmínka není splněna.");
     }
 
     if (bindingResult.hasErrors()) { //metoda, ktera rika, jestli tam jsou chyby. Kdyz ano, zobrazi se znovu ten formular a zobrazi chyby v okne s formularem
